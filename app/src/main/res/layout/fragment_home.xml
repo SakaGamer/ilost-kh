@@ -3,21 +3,17 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <Button
-        android:id="@+id/button11"
+
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/sign_in" />
-
-    <com.android.volley.toolbox.NetworkImageView
-        android:id="@+id/network_img"
-        android:layout_width="100dp"
-        android:layout_height="100dp" />
+        android:id="@+id/home_txt_user_email"/>
 
     <Button
-        android:id="@+id/button22"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/sign_out" />
+        android:text="log out"
+        android:layout_marginTop="50dp"
+        android:id="@+id/home_btn_logout"/>
 
 </LinearLayout>
