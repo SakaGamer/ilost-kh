@@ -3,17 +3,18 @@ package kh.com.ilost.activities;
 
 import android.content.DialogInterface;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.v7.app.AlertDialog;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.ChildEventListener;
@@ -41,7 +42,7 @@ public class ChatActivity extends AppCompatActivity implements View.OnClickListe
     MessageAdapter messageAdapter;
     List<Chat> chatHistory = new ArrayList<>();
     String uidFriend;
-//    String nameFriend;
+    //    String nameFriend;
     String myUid;
 
     LinearLayoutManager layoutManager;
@@ -159,6 +160,9 @@ public class ChatActivity extends AppCompatActivity implements View.OnClickListe
 
         // if edit text focused scroll to last message
         if (edtMessage.isFocused()) {
+            if (messageAdapter.getItemCount() == 0) {
+                return;
+            }
             layoutManager.smoothScrollToPosition(recyclerView,
                     null, messageAdapter.getItemCount() - 1);
         }

@@ -2,10 +2,10 @@ package kh.com.ilost.activities;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.v7.app.AppCompatActivity;
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
@@ -27,7 +27,6 @@ import java.util.HashMap;
 import java.util.Map;
 
 import kh.com.ilost.R;
-import kh.com.ilost.models.User;
 
 public class SignupActivity extends AppCompatActivity implements View.OnClickListener {
 

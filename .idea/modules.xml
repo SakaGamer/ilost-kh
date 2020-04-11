@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="ilost-kh/app" />
+      <module fileurl="file://$PROJECT_DIR$/ilost-kh.iml" filepath="$PROJECT_DIR$/ilost-kh.iml" group="ilost-kh" />
+    </modules>
+  </component>
+</project>
